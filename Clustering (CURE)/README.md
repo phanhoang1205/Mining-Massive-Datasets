@@ -127,6 +127,7 @@ K-mean phù hợp với dữ liệu có dạng lồi
 $$
 Avg = \frac{1}{N} \sum_{i}^{N} d(Xi, Ci)
 $$
+
 Để xác định giá trị k phù hợp, lần lượt khảo sát nhiều giá trị k để tìm giá trị tốt nhất
 
 ----
