@@ -12,7 +12,7 @@ Sigma: là ma trận singular values
 Trong phân rã SVD
 
 - U, $Σ$, V là duy nhất 
-- U, V có tính chất orthonormal (trực chuẩn) 
+- U, V có tính chất orthonormal (trực chuẩn)
 - $U^T . U =  I, V^T . V = I$ 
 - ma trận Σ: là ma trận đường chéo, các phần tử trên dường chéo chính ko âm và được sắp xếp giảm dần ($\sigma_1 >= \sigma_2 >= … >= \sigma$)
 
@@ -24,9 +24,7 @@ Ma trận sigma thể hiện tỉ trọng hay cường độ của các trend
 
 ## Frobenius Norm
 
-$$
-    ||M|| _F = \sqrt{\sum(M_{ij})^2}
-$$
+$$|M| _F = \sqrt{ \sum (M _ {ij})^2 }$$
 
 ----
 Energy của 1 ma trận đường chéo = tổng bình phương của các phần tử trên đường chéo chính \
@@ -62,19 +60,22 @@ $M = M - λ$
 
 A = C.U.R
 
-C: chọn ngẫu nhiên các cột trên ma trận A ghép thành ma trận C \
-R: Chọn ngẫu nhiên các dòng trên A ghép thành ma trận R \
-U: Ghép các phần tử tại giao điểm giữa các dòng và các cột thành ma trận W, DÙng thuật toán SVD phân rã ma trận W thành X.Z.Y^T \
-Tìm ma trận W^+ là giả nghịch đảo (pseudo inverse) = $Y.(Z+).X^T$ \
-$U = Y.(Z+)^2.X^T$ \
+C: chọn ngẫu nhiên các cột trên ma trận A ghép thành ma trận C 
 
+R: Chọn ngẫu nhiên các dòng trên A ghép thành ma trận R 
+
+U: Ghép các phần tử tại giao điểm giữa các dòng và các cột thành ma trận W, DÙng thuật toán SVD phân rã ma trận W thành X.Z.Y^T 
+
+Tìm ma trận W^+ là giả nghịch đảo (pseudo inverse) = $Y.(Z+).X^T$ 
+
+$U = Y.(Z+)^2.X^T$ 
 
 Important của 1 vector là tổng binh phương các phần tử của vector đó \
 Ưu Tiên chọn các vector có important lớn (có nhiều phần tử khác 0) để thành lập C và R \
-Chọn các dòng các cột có xác suất tỉ lệ thuận important \
+Chọn các dòng các cột có xác suất tỉ lệ thuận important 
 
 Ưu điểm: dễ hiểu, C và R là ma trận thưa \
-Khuyết điểm: dễ chọn dữ liệu trùng lặp \
+Khuyết điểm: dễ chọn dữ liệu trùng lặp 
 
 Trong thuật toán SVD: \
 Embedding của từng cột là $U.\Sigma$ \
