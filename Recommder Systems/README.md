@@ -31,7 +31,7 @@ _Cold start:
  _ Chuyên biệt hóa thái quá
 
 ----
-+ Collabborative Filltering: sử dụng trực tiếp các cột các dòng trong ma trận ultility để làm vector profile cho người dùng, sản phẩm \
++ Collabborative Filltering: sử dụng trực tiếp các cột các dòng trong ma trận ultility để làm vector profile cho người dùng, sản phẩm 
 
   Cho người dùng X dự đoán rating của X cho I như sau
  + tìm N người dùng giống với X nhất và có rating cho I

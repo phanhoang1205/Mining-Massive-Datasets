@@ -18,11 +18,9 @@ VT -> VP
 
 Là xác suất người dùng lấy sản phẩm bên ở vế phải khi họ lấy các sản phẩm ở vế trái
 
-$
-\begin{equation}
+$$
 Conf(I -> j)
-\end{equation}
-$
+$$
 
 * I: là lấy hết sản phẩm ở vế trái
 
@@ -32,23 +30,19 @@ $I_j = I \cup {j}$
 
 $P(x) = \frac{sup(X)}{baskets}$
 
-$
-\begin{equation}
+$$
 Conf(I -> j) = \frac{Sup(I \cup {j})}{Sup(I)} = \frac{P(I \cup j)}{P(I)} =
 \frac{P(I_j)}{P(I)} = P(j | I)
-\end{equation}
-$
+$$
 
 
 ---
 ## Interest of association rule
 Là trị tuyệt đối giữa hiệu số của conf và xác suất của vế phải
 
-$
-\begin{equation}
+$$
 Interest(I -> j) = | conf(I -> j) - P[j] | = |P(j|I) - P(j)|
-\end{equation}
-$
+$$
 Interest càng lớn confi càng có ý nghĩa
 
 ---

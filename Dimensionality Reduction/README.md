@@ -7,7 +7,7 @@ Sigma: là ma trận singular values
 
 ----
 
-SVD: singular value decomposition
+## SVD: singular value decomposition
 
 Trong phân rã SVD 
 
@@ -22,10 +22,11 @@ Ma trận sigma thể hiện tỉ trọng hay cường độ của các trend
 
 ----
 
-Frobenius Norm: \
-$
+## Frobenius Norm:
+
+$$
 || M || _F = \sqrt{\sum(M_{ij})^2}
-$
+$$
 
 ----
 Energy của 1 ma trận đường chéo = tổng bình phương của các phần tử trên đường chéo chính \
@@ -57,7 +58,7 @@ $M = M - λ$
 + U và V là 2 ma trận dense
 
 ----
-CUR decomposition
+## CUR decomposition
 
 A = C.U.R
 

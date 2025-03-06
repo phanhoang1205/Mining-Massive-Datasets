@@ -57,8 +57,9 @@ Dự vào Không gian biểu diễn dữ liệu chia làm 2 loại:
 ## Tiêu chí 3: kích thước dữ liệu
 Dữ liệu có chứa vừa trong bộ nhớ ko?
 
-Chia làm 2 loại: \
-- In-memory: K-means \
+Chia làm 2 loại:
+
+- In-memory: K-means
 - large-data clustering: đọc dữ liệu thành từng batch để xử lý (BFR, CURE) \
 
 ----
@@ -68,6 +69,7 @@ Phương pháp point-assignment: hoạt động tốt với các điểm có hì
 Hierarchical: có thể xử lý dữ liệu kì dị
 
 * Hierarchical (Agglomerative):
+
 1. How to represent a cluster
     * Trường hợp euclidean
         * Biểu diễn các cluster bằng điểm centroid
@@ -121,9 +123,10 @@ Sử dụng centroid, khoảng cách 2 cluster được đo bằng khoảng các
 K-mean phù hợp với dữ liệu có dạng lồi
 
 Để đánh giá kết quả phân cụm, ta có thể sử dụng trung bình khoảng cách (hoặc bình phương khoảng cách) mỗi điểm dữ liệu đến centroid của nó
-\begin{equation}
+
+$$
 Avg = \frac{1}{N} \sum_{i}^{N} d(Xi, Ci)
-\end{equation}
+$$
 Để xác định giá trị k phù hợp, lần lượt khảo sát nhiều giá trị k để tìm giá trị tốt nhất
 
 ----
@@ -133,7 +136,7 @@ Avg = \frac{1}{N} \sum_{i}^{N} d(Xi, Ci)
 _ Biểu diễn dữ liệu trong không gian euclidean, các điểm dữ liệu là vector \
 _ Sử dụng khoảng cách euclidean (L2) \
 _ Sử dụng centroid, khoảng cách 2 cluster được đo bằng khoảng cách của 2 centroid \
-_ phù hợp với dữ liệu có các cluster dạng lồi \
+_ phù hợp với dữ liệu có các cluster dạng lồi 
 
 
 Tổng quan thuật toán BFR \
