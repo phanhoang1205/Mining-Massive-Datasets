@@ -18,18 +18,20 @@ K-shingle have 2 benefic:
 - Khi thay đổi 1 từ thì có k-shingle ảnh hưởng
 
 Jaccard similarity:
-$$
+
+$
 \begin{equation}
 Sim(D1, D2)=  \frac{|C1 \cup C2|}{|C1 \cup C2|}
 \end{equation}
-$$
+$
 
 Jaccard distance:
-$$
+
+$
 \begin{equation}
 d(D1, D2) = 1 - Sim(D1, D2)
 \end{equation}
-$$
+$
 
 
 ---

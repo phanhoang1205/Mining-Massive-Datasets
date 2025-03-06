@@ -1,6 +1,4 @@
-
-
-----
+# Dimensionality Reduction
 
 A: là ma trận input đầu vào \
 U: là ma trận left singular vectors, U được gộp từ các cột mỗi cột là một vector \
@@ -11,39 +9,46 @@ Sigma: là ma trận singular values
 
 SVD: singular value decomposition
 
-Trong phân rã SVD \
-_ U, $Σ$, V là duy nhất \
-_ U, V có tính chất orthonormal (trực chuẩn) \
-_ $U^T . U =  I, V^T . V = I$ \
-_ ma trận Σ: là ma trận đường chéo, các phần tử trên dường chéo chính ko âm và được sắp xếp giảm dần ($\sigma_1 >= \sigma_2 >= … >= \sigma$) \
+Trong phân rã SVD 
+
+- U, $Σ$, V là duy nhất 
+- U, V có tính chất orthonormal (trực chuẩn) 
+- $U^T . U =  I, V^T . V = I$ 
+- ma trận Σ: là ma trận đường chéo, các phần tử trên dường chéo chính ko âm và được sắp xếp giảm dần ($\sigma_1 >= \sigma_2 >= … >= \sigma$)
 
 Ma trận U thể hiện tương quan giữa người dùng và concept dữ liệu \
 Ma trận V thể hiện sự tương quan giữa bộ phim và concept \
-Ma trận sigma thể hiện tỉ trọng hay cường độ của các trend \
+Ma trận sigma thể hiện tỉ trọng hay cường độ của các trend
 
 ----
 
 Frobenius Norm: \
-$|| M || _F = \sqrt{Σ(M_{ij})^2} $
+$
+|| M || _F = \sqrt{\sum(M_{ij})^2}
+$
 
 ----
 Energy của 1 ma trận đường chéo = tổng bình phương của các phần tử trên đường chéo chính \
 Xóa các phần từ trên sigma từ nhỏ tới lớn đảm bảo energy tối thiểu còn lại 90% \
 \
 EigenPair = {ergenvector, ergenvalue} \
-$A.v = v.λ$ \
-A(2, 3, 1) = vector OA = (2, 3, 1) = 2i + 3j + k (linear combination) \
+$A.v = v.λ$ 
 
-$OA.i = I.2$ \
-$OA.j = j.3$ \
+A(2, 3, 1) = vector OA = (2, 3, 1) = 2i + 3j + k (linear combination) 
+
+$OA.i = I.2$ 
+
+$OA.j = j.3$ 
+
 $OA.k = k.1$
 
 Ergen vector: Power Iteration
 M: symmetric
 X0 \
-$X = \frac{M_x}{||Mx||_F}$ \
 
-$λ = x^T.M_x$ \
+$X = \frac{M_x}{||Mx||_F}$ 
+
+$λ = x^T.M_x$ 
 
 $M = M - λ$
 
