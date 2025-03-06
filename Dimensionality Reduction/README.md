@@ -9,7 +9,7 @@ Sigma: là ma trận singular values
 
 ## SVD: singular value decomposition
 
-Trong phân rã SVD 
+Trong phân rã SVD
 
 - U, $Σ$, V là duy nhất 
 - U, V có tính chất orthonormal (trực chuẩn) 
@@ -22,10 +22,10 @@ Ma trận sigma thể hiện tỉ trọng hay cường độ của các trend
 
 ----
 
-## Frobenius Norm:
+## Frobenius Norm
 
 $$
-|| M || _F = \sqrt{\sum(M_{ij})^2}
+    ||M|| _F = \sqrt{\sum(M_{ij})^2}
 $$
 
 ----

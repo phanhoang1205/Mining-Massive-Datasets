@@ -14,6 +14,7 @@ An items is frequent <=> $sup(I) \geq$ Support threshold
 VT -> VP
 
 ---
+
 ## Confidence of association rule:
 
 Là xác suất người dùng lấy sản phẩm bên ở vế phải khi họ lấy các sản phẩm ở vế trái
@@ -34,19 +35,23 @@ $$
 Conf(I -> j) = \frac{Sup(I \cup {j})}{Sup(I)} = \frac{P(I \cup j)}{P(I)} =
 \frac{P(I_j)}{P(I)} = P(j | I)
 $$
-
-
 ---
+
 ## Interest of association rule
+
 Là trị tuyệt đối giữa hiệu số của conf và xác suất của vế phải
 
 $$
-Interest(I -> j) = | conf(I -> j) - P[j] | = |P(j|I) - P(j)|
+Interest(I -> j) = | conf(I -> j) - P[j] |
+= |P(j|I) - P(j)|
 $$
+
 Interest càng lớn confi càng có ý nghĩa
 
 ---
+
 ## Association Rule Mining
+
 Tìm ra các luật liên kết mà ngưỡng $support \geq s$ và $confidence \leq c$
 
 Step 1: tìm các frequent Itemset
@@ -54,7 +59,9 @@ Step 1: tìm các frequent Itemset
 Step 2: phát sinh luật và chọn lọc
 
 ---
+
 ## Evaluation
+
 Đánh giá mức độ phức tạp của thuật toán qua thời gian được đánh giá bằng pass
 
 Pass: là 1 lần duyệt qua tập dữ liệu
@@ -64,6 +71,7 @@ sparse: thưa (ít)
 Dense: dày
 
 ---
+
 ## A-priori
 
 A-priori là thuật toán có 2-pass
