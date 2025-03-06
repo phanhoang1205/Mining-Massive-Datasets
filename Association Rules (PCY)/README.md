@@ -32,9 +32,9 @@ $I_j = I \cup {j}$
 $P(x) = \frac{sup(X)}{baskets}$
 
 $$
-Conf(I -> j) = \frac{Sup(I \cup {j})}{Sup(I)} = \frac{P(I \cup j)}{P(I)} =
-\frac{P(I_j)}{P(I)} = P(j | I)
+Conf(I -> j) = \frac{Sup(I \cup {j})}{Sup(I)} = \frac{P(I \cup j)}{P(I)} = \frac{P(I_j)}{P(I)} = P(j | I)
 $$
+
 ---
 
 ## Interest of association rule
@@ -42,8 +42,7 @@ $$
 Là trị tuyệt đối giữa hiệu số của conf và xác suất của vế phải
 
 $$
-Interest(I -> j) = | conf(I -> j) - P[j] |
-= |P(j|I) - P(j)|
+Interest(I -> j) = | conf(I -> j) - P[j] | = |P(j|I) - P(j)|
 $$
 
 Interest càng lớn confi càng có ý nghĩa
